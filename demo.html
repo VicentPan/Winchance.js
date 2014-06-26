@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>文档 - Winchance.js Ver 1.0 beta</title>
+<link rel="stylesheet" type="text/css" href="css/Winchance.css" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/Winchance.js"></script>
+<script type="text/javascript">
+$(function () {
+	var winSrc="http://www.baidu.com";
+	var winTitle="弹窗的标题";	
+	$("#showWin").showWindow(winSrc,winTitle);
+	$("#tiptest").getTips();
+});
+
+</script>
+</head>
+<style>
+.mokuai{text-align:center; border-bottom:1px solid #999; padding-bottom:50px;}
+ .mokuai p{padding:10px;}
+pre{border:1px solid #ccc; width:699px; margin:0 auto; padding:5px; margin-bottom:10px;}
+h1{ font-size:56px; font-family:"微软雅黑"; color:#06C;}
+h2{ font-size:26px; font-family:"微软雅黑"; color:#06C; margin-top:5px; padding-bottom:10px;}
+.gongneng{ width:1024px; margin:0 auto; border-bottom:1px solid #999; padding:10px; padding-bottom:20px;}
+ .gongneng p{margin:10px 0px 10px 0px;}
+ .gongneng h3{margin:10px 0px 10px 0px;}
+.fangfa{ width:600px; border:1px solid #CCC; padding:5px; font-size:13px;}
+</style>
+<body>
+
+<div class="mokuai">
+	<h1>Winchance.js</h1>
+    <p>Winchance.js来自网创。是一个基于jQuery的框架集，包含CSS样式和一些常用的网页插件。</p>
+    <p>使用Winchance.js：在head标签引入CSS样式；在DOM树结尾处或者head标签内引入JS文件。</p>
+    <pre>&lt;link rel=&quot;text/css&quot; herf=&quot;css/Winchance.css&quot;/&gt;</pre>
+    <pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.9.1.min.js&quot;&gt;&lt;/script&gt;</pre>
+    <pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/Winchance.js&quot;&gt;&lt;/script&gt;</pre>
+</div>
+<div class="gongneng">
+	<h2>全局</h2>
+    <h3>CSS reset</h3>
+    <p>集成了雅虎YUI CSS reset</p>   
+    <h3>使用方法</h3> 
+    <xmp class="fangfa">
+    	引入winchance.css以后自动集成。
+    </xmp>
+</div>
+<div class="gongneng">
+	<h2>CSS 组件</h2>
+    <h3>按钮</h3>
+    <p><a href="#" class="submitBtn">提交按钮</a>&nbsp;<a href="#" class="closeBtn">关闭按钮</a>&nbsp;<a href="#" class="submitBtn-big">大号按钮</a></p>   
+    <h3>使用方法</h3> 
+    <xmp class="fangfa">
+    	提交按钮：<a href="#" class="submitBtn">提交按钮</a>
+        关闭按钮：<a href="#" class="closeBtn">关闭按钮</a>
+    </xmp>
+    <h3>带图标的按钮</h3>
+    <p><input type="button" class="iconBtn-expedited" value="expedited">&nbsp;<input type="button" class="iconBtn-lock" value="lock">&nbsp;<input type="button" class="iconBtn-reservation" value="reservation">&nbsp;<input type="button" class="iconBtn-reduction" value="reduction">&nbsp;<input type="button" class="iconBtn-invalid" value="invalid">&nbsp;<input type="button" class="iconBtn-audit" value="audit">&nbsp;<input type="button" class="iconBtn-backaudit" value="backaudit">&nbsp;<input type="button" class="iconBtn-toNormal" value="toNormal">&nbsp;<input type="button" class="iconBtn-reject" value="reject">&nbsp;<input type="button" class="iconBtn-grant" value="grant"></p>
+    <p><input type="button" class="iconBtn-refresh" value="refresh">&nbsp;<input type="button" class="iconBtn-add" value="add"></p>   
+    <h3>使用方法</h3> 
+    <xmp class="fangfa">
+    	带图标的按钮<input type="button" class="iconBtn-add" value="add">
+        变更CLASS iconBtn-之后的对应名称可实现对应样式。如icon-Btn-add即为add样式。
+    </xmp>
+</div>
+<div class="gongneng">
+	<h2>遮罩弹出层</h2>
+    <h3>demo示例</h3>
+    <p><button id="showWin">点我进行测试</button></p>
+    <h3>使用方法</h3>
+    <p class="fangfa">      
+      var winSrc="http://www.baidu.com";<br>	
+	  var winTitle="弹窗的标题";<br>
+	  $("触发该弹窗事件的元素").showWindow(winSrc,winTitle);
+    </p>
+</div>
+<div class="gongneng">
+	<h2>日期选择器</h2>
+    <h3>demo示例</h3>
+</div>
+<div class="gongneng">
+	<h2>气泡提示框（未同步）</h2>
+    <h3>demo示例</h3>
+    <p title="气泡提示框" id="tiptest">鼠标放到我上面试试！！</p>
+    <h3>使用方法</h3>
+    <p class="fangfa">      
+    	$("想要显示气泡提示框的元素").getTips();<br>
+    </p>
+</div>
+<div class="gongneng">
+	<h2>select下拉框</h2>
+    <h3>demo示例</h3>
+</div>
+<div class="gongneng">
+	<h2>状态徽章组</h2>
+    <h3>demo示例</h3>
+    <p>灰色<span class="mark-gray">36</span></p>
+    <p>红色<span class="mark-red">hot</span></p>
+    <p>蓝色<span class="mark-blue">new</span></p>
+    <h3>使用方法</h3>
+    <xmp class="fangfa">
+    	灰色<span class="mark-gray">36</span>
+    	红色<span class="mark-red">hot</span>
+    	蓝色<span class="mark-blue">new</span>
+    </xmp>
+</div>
+<div class="gongneng">
+	<h2>Tab切换</h2>
+    <h3>模式一demo示例</h3>
+    <h3>模式二demo示例</h3>
+</div>
+</body>
+</html>

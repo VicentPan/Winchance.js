@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS reset - YUI */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {padding:0;margin:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-weight:normal;font-style:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;}
+/* 按钮组件 */
+/* 提交按钮 - 普通 */
+.submitBtn:link{ display:inline-block; padding:6px 15px 6px 15px; text-align:center; background:#379BE9; color:#FFF; text-decoration:none; font-size:13px; border-radius:3px;}
+.submitBtn:hover{ background:#6CF; color:#FFF; text-decoration:none;}
+.submitBtn:active{color:#FFF; text-decoration:none;}
+.submitBtn:visited{color:#FFF; background:#379BE9; text-decoration:none;}
+/* 提交按钮 - 大号 */
+.submitBtn-big:link{ display:inline-block; width:120px; line-height:50px;height:50px;text-align:center; background:#379BE9; color:#FFF; text-decoration:none; font-size:15px; border-radius:3px;}
+.submitBtn-big:hover{ background:#6CF; color:#FFF; text-decoration:none;}
+.submitBtn-big:active{color:#FFF;text-decoration:none;}
+.submitBtn-big:visited{background:#379BE9; color:#FFF;text-decoration:none;}
+/* 关闭按钮 - 常规 */
+.closeBtn:link{ display:inline-block; width:67px; line-height:28px;height:28px;text-align:center; background:#CCC; color:#333; text-decoration:none; font-size:12px; border-radius:3px;}
+.closeBtn:hover{ background:#999;color:#333; text-decoration:none;}
+.closeBtn:active{color:#333;text-decoration:none;}
+.closeBtn:visited{background:#CCC; color:#333;text-decoration:none;}
+/* button版 - 蓝色 */
+.btn-blue{ background:#379BE9; color:#FFF; padding:6px 15px 6px 15px; border:none; border-radius:3px; cursor:pointer;}
+.btn-blue:hover{ background:#6CF;}
+.btn-noAct{ background:#CCC; color:#FFF; padding:6px 15px 6px 15px; border:none; border-radius:3px; cursor:not-allowed;}
+/* button版 - 灰色 */
+.btn-gray{ background:#CCC; color:#000; padding:6px 15px 6px 15px; border:none; border-radius:3px; cursor:pointer;}
+.btn-gray:hover{ background:#999;}
+/* 小按钮 */
+.iconBtn-blue{background:#09F; color:#FFF; padding:1px 5px 1px 5px; font-size:12px;}
+/* 带图标的按钮 */
+.iconBtn-refresh{ background:#379BE9; border-bottom:3px solid #FF0;; padding:10px 15px 10px 25px; color:#FFF; border:none; border-radius:3px; background-image:url(winchanceJs-image/icon-refresh.png); background-repeat:no-repeat; background-position:3px 5px; cursor:pointer;}
+.iconBtn-add{ background:#379BE9; border-bottom:3px solid #FF0;; padding:10px 15px 10px 25px; color:#FFF; border:none; border-radius:3px; background-image:url(winchanceJs-image/icon-add.png); background-repeat:no-repeat; background-position:3px 5px; cursor:pointer;}
+.iconBtn-expedited{ background:#FFF; border-bottom:3px solid #FF0;; padding:10px 15px 10px 25px; color:#379BE9; border:1px solid #379BE9; border-radius:3px; background-image:url(winchanceJs-image/icon-expedited.png); background-repeat:no-repeat; background-position:3px 5px; cursor:pointer;}
+.iconBtn-lock{ background:#FFF; border-bottom:3px solid #FF0;; padding:10px 15px 10px 25px; color:#379BE9; border:1px solid #379BE9; border-radius:3px; background-image:url(winchanceJs-image/icon-lock.png); background-repeat:no-repeat; background-position:3px 5px; cursor:pointer;}
+.iconBtn-reservation{ background:#FFF; border-bottom:3px solid #FF0;; padding:10px 15px 10px 25px; color:#379BE9; border:1px solid #379BE9; border-radius:3px; background-image:url(winchanceJs-image/icon-reservation.png); background-repeat:no-repeat; background-position:3px 5px; cursor:pointer;}
+.iconBtn-reduction{ background:#FFF; border-bottom:3px solid #FF0;; padding:10px 15px 10px 25px; color:#379BE9; border:1px solid #379BE9; border-radius:3px; background-image:url(winchanceJs-image/icon-reduction.png); background-repeat:no-repeat; background-position:3px 5px; cursor:pointer;}
+.iconBtn-invalid{ background:#FFF; border-bottom:3px solid #FF0;; padding:10px 15px 10px 25px; color:#379BE9; border:1px solid #379BE9; border-radius:3px; background-image:url(winchanceJs-image/icon-invalid.png); background-repeat:no-repeat; background-position:3px 5px; cursor:pointer;}
+.iconBtn-audit{ background:#FFF; border-bottom:3px solid #FF0;; padding:10px 15px 10px 25px; color:#379BE9; border:1px solid #379BE9; border-radius:3px; background-image:url(winchanceJs-image/icon-audit.png); background-repeat:no-repeat; background-position:3px 5px; cursor:pointer;}
+.iconBtn-backaudit{ background:#FFF; border-bottom:3px solid #FF0;; padding:10px 15px 10px 25px; color:#379BE9; border:1px solid #379BE9; border-radius:3px; background-image:url(winchanceJs-image/icon-backaudit.png); background-repeat:no-repeat; background-position:3px 5px; cursor:pointer;}
+.iconBtn-toNormal{ background:#FFF; border-bottom:3px solid #FF0;; padding:10px 15px 10px 25px; color:#379BE9; border:1px solid #379BE9; border-radius:3px; background-image:url(winchanceJs-image/icon-toNormal.png); background-repeat:no-repeat; background-position:3px 5px; cursor:pointer;}
+.iconBtn-reject{ background:#FFF; border-bottom:3px solid #FF0;; padding:10px 15px 10px 25px; color:#379BE9; border:1px solid #379BE9; border-radius:3px; background-image:url(winchanceJs-image/icon-reject.png); background-repeat:no-repeat; background-position:3px 5px; cursor:pointer;}
+.iconBtn-grant{ background:#FFF; border-bottom:3px solid #FF0;; padding:10px 15px 10px 25px; color:#379BE9; border:1px solid #379BE9; border-radius:3px; background-image:url(winchanceJs-image/icon-grant.png); background-repeat:no-repeat; background-position:3px 5px; cursor:pointer;}
+
+/* 遮罩弹窗 */
+.mask{position:absolute; top:0px; filter:alpha(opacity=60); background-color: #777;z-index:1002; left:0px; opacity:0.5;-moz-opacity:0.5;}
+.tipWindow{ position:absolute; width:460px; top:30%; left:50%; margin-left:-230px; height:390px; border:1px solid #999; border-radius:3px; background:#FFF; z-index:1006;-webkit-animation:flipInY .6s .2s ease both;-moz-animation:flipInY .6s .2s ease both;}
+ .tipWindow h1{ font-size:16px; font-weight:normal; background:#379BE9; color:#FFF; padding:5px; text-align:center;}
+ .winContent{ text-align:center; margin:25px 0px 3px 0px; border-bottom:1px solid #CCC; padding-bottom:5px;}
+ .winBtn{ position:absolute; right:20px;padding:5px; display:block; bottom:2px;}
+ .winClose{ display:block; position:absolute; color:#FFF; top:5px; right:10px; font-weight:bold; cursor:pointer;} 
+/* 日期选择器 */
+
+/* 气泡提示框 */
+.tipTitle{ width:300px; height:100px; border:2px solid #CCC; position:absolute; background-color:#FF9; left:50%; margin-left:-150px;}
+.tipTitle em{display:block; border-width:20px; position:absolute; top:-40px; left:100px;border-style:solid dashed dashed; border-color:transparent transparent #CCC;font-size:0; line-height:0;}
+.tipTitle span{display:block; border-width:20px; position:absolute; top:-37px; left:100px;border-style:solid dashed dashed; border-color:transparent transparent #FF9;font-size:0; line-height:0; }
+/* 状态标签 */
+.tip-blue{background:#FFF; color:#0CF; padding:1px 5px 1px 5px; font-size:13px; border-radius:5px; border:1px solid #0CF;}
+.tip-orange{background:#FFF; color:#F96; padding:1px 5px 1px 5px; font-size:13px; border-radius:5px; border:1px solid #F96;}
+.tip-red{background:#FFF; color:#C60; padding:1px 5px 1px 5px; font-size:13px; border-radius:5px; border:1px solid #C60;}
+.tip-gray{background:#FFF; color:#999; padding:1px 5px 1px 5px; font-size:13px; border-radius:5px; border:1px solid #999;}
+.tip-green{background:#FFF; color:#6C6; padding:1px 5px 1px 5px; font-size:13px; border-radius:5px; border:1px solid #6C6;}
+/* 状态徽章 */
+.mark-gray{border-radius:10px; color:#FFF; padding:3px 8px 3px 8px; background:#999; font-size:13px; font-weight:bold; margin-left:10px;}
+.mark-red{border-radius:10px; color:#FFF; padding:3px 8px 3px 8px; background:#960; font-size:13px; font-weight:bold; margin-left:10px;}
+.mark-blue{border-radius:10px; color:#FFF; padding:3px 8px 3px 8px; background:#09C; font-size:13px; font-weight:bold; margin-left:10px;}
+.mark-gray-top{ position:absolute; border-radius:10px; color:#FFF; padding:3px 8px 3px 8px; background:#999; border:1px solid #FFF; font-size:13px; line-height:13px;  margin-top:-10px; z-index:999;}
+.mark-red-top{ position:absolute; border-radius:10px; color:#FFF; padding:3px 8px 3px 8px; background:#960; border:1px solid #FFF; font-size:13px; line-height:13px;  margin-top:-10px; z-index:999;}
+.mark-blue-top{ position:absolute; border-radius:10px; color:#FFF; padding:3px 8px 3px 8px; background:#09C; border:1px solid #FFF; font-size:12px; line-height:12px;  margin-top:-13px; margin-left:-90px; z-index:999;}
+/* 布局table */
+.tableLayout{ width:100%;}
+ .tableLayout h1{ font-size:19px; font-family:"微软雅黑"; color:#379BE9; font-weight:normal; padding:3px;}
+/* 简易的表格插件 */
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 13px;
+	width: 100%;
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 13px;
+	padding: 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url(../images/icon/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(../images/icon/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(../images/icon/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
+/* 分页之样式 */
+.pageGroup{ margin:5px 0px 5px 10px; font-size:15px; color:#999;}
+/* Winchance grid */
+.tableGrid{ font-family:"微软雅黑"; font-size:13px; border:1px soild #FFF; table-layout:fixed;}
+ .tableGrid thead{ background:#e6EEEE; line-height:30px; font-size:13px; width:30px;}
+ .tableGrid tbody tr td:first-child {text-align:center;}
+ .tableGrid td{ height:25px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}/* 限制TD的宽度 */
+ .listbody tr:hover{ background:#379BE9; color:#FFF;}
+ .listGridActive{ background:#379BE9; color:#FFF;}
+ .listContent{ width:100%}
+#listTip{ position:absolute; display:none; width:auto; max-width:300px; height:auto; min-height:16px; background:#FFC; border:1px solid #FC6; font-size:16px; padding:5px; z-index:99999;}
+/* Winchance grid - child*/
+.tableGrid-child{ font-family:"微软雅黑"; font-size:13px; width:900px; border:1px soild #FFF;}
+ .tableGrid-child thead{ background:#e6EEEE; line-height:30px; font-size:13px; width:30px;}
+ .tableGrid-child td{ line-height:25px; }
+ .listbody-child tr:hover{ background:#6CF; color:#FFF;}
+ .listGridActive-child{ background:#379BE9; color:#FFF;}
+ .listContent-child{ width:100%}
+ .childTable{ overflow-x:scroll; overflow-y:auto; height:160px; width:630px;}
+/* 属性明细列表 */
+ .moreList li{ margin-top:10px;}
+/* 文本框 */
+.input-global{ border:1px solid #ccc; line-height:28px; height:28px;}
+.input-active-blue{ border:1px solid #00A2CA;}
+/* 下拉框 */
+.select-global{ line-height:30px; height:30px; margin-top:9px;}
+/* 状态提示窗 */
+.statWindow{ position:absolute; width:320px; height:100px; background:#36C; color:#FFF; font-size:26px; font-family:"微软雅黑"; top:260px; left:50%; margin-left:-160px; line-height:100px; border:1px solid #fff; padding-left:16px; z-index:99999; border-radius:5px; vertical-align:middle; display:none; filter:alpha(opacity=90); -moz-opacity:0.9; opacity:0.9;}
+/* 遮罩层 */
+.zhezhao{ display:none; position:absolute; width:100%; height:100%; background:#FFF; top:0px; left:0px; filter:alpha(opacity=50); -moz-opacity:0.5; opacity:0.5; z-index:999;}
+/* CSS3动画预定义 */
+@-webkit-keyframes flipInY{
+0%{-webkit-transform:perspective(400px) rotateY(90deg);
+opacity:0}
+40%{-webkit-transform:perspective(400px) rotateY(-10deg)}
+70%{-webkit-transform:perspective(400px) rotateY(10deg)}
+100%{-webkit-transform:perspective(400px) rotateY(0deg);
+opacity:1}
+}
+@-moz-keyframes flipInY{
+0%{-moz-transform:perspective(400px) rotateY(90deg);
+opacity:0}
+40%{-moz-transform:perspective(400px) rotateY(-10deg)}
+70%{-moz-transform:perspective(400px) rotateY(10deg)}
+100%{-moz-transform:perspective(400px) rotateY(0deg);
+opacity:1}
